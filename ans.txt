@@ -1,0 +1,16 @@
+Question 1: What authentication scheme is used by default in Django Rest Framework's browsable API? How is this managed?
+the default is BasicAuthentication and SessionAuthentication
+
+Question 2: What authentication scheme is used by httpie when querying with the -a or --auth option flag?
+basic auth is used by httpie
+
+Question 3: What is the difference between Session Authentication and Token Authentication? How is Token Authentication an improvement over Basic Authentication?
+authentication details are stored on the server side in session authentication and on the user side in token authentication
+token auth us stateless so server doesnt need to keep track of the users
+
+Question 4: Provide a high level summary of what happens during an OAuth2 authentication flow. For instance: bitbucket.org > Log In > Log in with Google. What happens when I click "Log in with Google"?
+Step 1 — Authorization Code Link
+Step 2 — User Authorizes Application
+Step 3 — Application Receives Authorization Code
+Step 4 — Application Requests Access Token
+Step 5 — Application Receives Access Token
